@@ -1,11 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Figma Land</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
 </head>
+
 <body>
+    <!-- <header>
+        <nav>
+            <div class="logo">FIGMA LAND</div>
+            <div class="social-icons">
+                <img src="assets/twitter.svg" alt="Twitter">
+                <img src="assets/facebook.svg" alt="Facebook">
+                <img src="assets/linkedin.svg" alt="LinkedIn">
+            </div>
+        </nav>
+        <div class="hero">
+            <h1>The best products start with Figma</h1>
+            <p>Most calendars are designed for teams.</p>
+            <button>Try For Free</button>
+        </div>
+    </header> -->
+
     
+
+    <section class="features">
+        <h2>Features</h2>
+        <div class="feature-icons">
+            <div>
+                <img src="assets/icon1.svg" alt="Icon 1">
+                <p>Completed product</p>
+            </div>
+            <div>
+                <img src="assets/icon2.svg" alt="Icon 2">
+                <p>Design efficiently</p>
+            </div>
+            <div>
+                <img src="assets/icon3.svg" alt="Icon 3">
+                <p>Customize tools</p>
+            </div>
+        </div>
+
+        <div class="video-section">
+            <video id="featureVideo" src="assets/sample.mp4" poster="assets/video-poster.jpg"></video>
+            <img id="playIcon" src="assets/play-icon.svg" class="play-icon" />
+        </div>
+    </section>
+
+    <section class="organize">
+        <h2>Fastest way to organize</h2>
+        <button>Try For Free</button>
+        <img src="assets/laptop.png" alt="Laptop" />
+    </section>
+
+    <section class="prototype">
+        <div>
+            <img src="assets/prototype.svg" alt="Prototype Illustration" />
+            <div>
+                <h3>Lightning fast prototyping</h3>
+                <p>Subscribe to our newsletter to stay updated</p>
+                <button>Subscribe</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="partners">
+        <h2>Partners</h2>
+        <div class="logos">
+            <img src="assets/google.png" alt="Google">
+            <img src="assets/amazon.png" alt="Amazon">
+            <img src="assets/microsoft.png" alt="Microsoft">
+            <img src="assets/uber.png" alt="Uber">
+            <img src="assets/dropbox.png" alt="Dropbox">
+        </div>
+        <button>Try For Free</button>
+    </section>
+
+    <section class="testimonials">
+        <h2>Testimonials</h2>
+        <div class="testimonial-slider">
+            <div class="slide active">IBM: Figma helped our teams align faster.</div>
+            <div class="slide">Amazon: Prototyping became 10x faster.</div>
+            <div class="slide">Uber: Design and development are now in sync.</div>
+        </div>
+        <div class="dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </section>
+
+    <section class="pricing">
+        <h2>Pricing</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Free</h3>
+                <p>$0 / mo</p>
+                <button>Order Now</button>
+            </div>
+            <div class="card">
+                <h3>Pro</h3>
+                <p>$10 / mo</p>
+                <button>Order Now</button>
+            </div>
+            <div class="card">
+                <h3>Business</h3>
+                <p>$99 / mo</p>
+                <button>Order Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <input type="text" name="name" placeholder="Name" required />
+            <input type="email" name="email" placeholder="Email" required />
+            <textarea name="message" placeholder="Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3..." allowfullscreen=""
+                loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Figma Land</p>
+        <div class="social-icons">
+            <img src="assets/twitter.svg" alt="Twitter">
+            <img src="assets/facebook.svg" alt="Facebook">
+            <img src="assets/linkedin.svg" alt="LinkedIn">
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="confirmationModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal">&times;</span>
+            <p>Your query sent successfully</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
